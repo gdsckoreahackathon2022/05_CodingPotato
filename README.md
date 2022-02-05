@@ -32,11 +32,11 @@ npm start
 # Backend
 ## 사용기술
   - Django
-  - WebSocket
+  - WebSocket: 실시간으로 client에게 폭염관련정보를 보내기 위함
   - BeautifulSoup
   - channels
-  - docker
-  - redis
+  - docker: redis를 구동하기 위한 container
+  - redis: channels를 구현하기 위해 서버
   
 ## 배포된 서비스 이용(아래 url로 접근 가능)
 > http://34.64.174.66:8000/
