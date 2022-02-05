@@ -1,5 +1,7 @@
-# ACCS: Web Frontend 
+# ACCS 
+Abnormal Climate Control System(이상기후통합관제체계)
 
+# Frontend
 ## 사용기술 
  - React 
  - deck.gl 
@@ -27,7 +29,7 @@ npm start
 - 폭염 위험에 대처하기 위한 지원요청 게시판
 - Firestore와 연동해 CRUD 구현 
 
-# ACCS: Web Backend
+# Backend
 ## 사용기술
   - Django
   - WebSocket
