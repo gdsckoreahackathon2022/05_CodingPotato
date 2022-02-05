@@ -4,8 +4,8 @@
  - React 
  - deck.gl 
  - chart.js 
- - Firestore 
- - firebase hosting 
+ - Firestore: 게시판 데이터 CRUD를 프론트단에서 간결하게 처리 
+ - firebase hosting: 웹 프론트앤드 배포
 
 ## 실행방법 
 - 배포된 서비스 이용 (아래 url로 접근 가능)
