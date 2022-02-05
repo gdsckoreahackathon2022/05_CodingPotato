@@ -1,11 +1,13 @@
-# ACCS: Web Frontend 
+# ACCS 
+Abnormal Climate Control System(이상기후통합관제체계)
 
+# Frontend
 ## 사용기술 
  - React 
  - deck.gl 
  - chart.js 
- - Firestore 
- - firebase hosting 
+ - Firestore: 게시판 데이터 CRUD를 프론트단에서 간결하게 처리 
+ - firebase hosting: 웹 프론트앤드 배포
 
 ## 실행방법 
 - 배포된 서비스 이용 (아래 url로 접근 가능)
@@ -27,14 +29,14 @@ npm start
 - 폭염 위험에 대처하기 위한 지원요청 게시판
 - Firestore와 연동해 CRUD 구현 
 
-# ACCS: Web Backend
+# Backend
 ## 사용기술
   - Django
-  - WebSocket
+  - WebSocket: 실시간으로 client에게 폭염관련정보를 보내기 위함
   - BeautifulSoup
   - channels
-  - docker
-  - redis
+  - docker: redis를 구동하기 위한 container
+  - redis: channels를 구현하기 위해 서버
   
 ## 배포된 서비스 이용(아래 url로 접근 가능)
 > http://34.64.174.66:8000/
