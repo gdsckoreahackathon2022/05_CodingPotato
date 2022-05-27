@@ -63,3 +63,104 @@ npm start
  
  /Alarm
  > client와 socket 연결 및 socket을 통해 전달받은 정보 표시 
+ 
+ ### Project Structure
+ 
+ ```
+Frontend
+│  App.js
+│  index.js
+│
+├─component
+│  ├─BoardCard
+│  │      index.js
+│  │
+│  ├─DeckMap
+│  │      index.js
+│  │
+│  └─TempTable
+│          index.js
+│          styles.js
+│
+├─layouts
+│  └─Appbar
+│          index.js
+│          styles.js
+│
+├─pages
+│  ├─HSTable
+│  │      index.js
+│  │      styles.js
+│  │
+│  ├─ReqBoard
+│  │  │  index.js
+│  │  │  styles.js
+│  │  │
+│  │  └─ReqWrite
+│  │          index.js
+│  │          styles.js
+│  │
+│  └─TempMap
+│          index.js
+│          styles.js
+│
+└─routeAPI
+        index.js
+ ```
+ 
+ ```
+ Backend
+│  .gitignore
+│  manage.py
+│
+├─api_json
+│      all_categories_heatwave_response.json
+│      region_heat_wave.json
+│      shelter.json
+│      test_warning_data.json
+│      total_heat_wave.json
+│
+├─api_module
+│      areaCode.py
+│      get_heatwave_warning.py
+│      get_regions_temperature_info.py
+│      heatwave_casualties_region.py
+│      inquiry_response_heatwave.py
+│      shelter.py
+│
+├─backend
+│      asgi.py
+│      routing.py
+│      settings.py
+│      urls.py
+│      views.py
+│      wsgi.py
+│      __init__.py
+│
+├─user
+│  │  finduser.py
+│  │  user.py
+│  │  views.py
+│  │  __init__.py
+│  │
+│  └─migrations
+│          __init__.py
+│
+└─websocket
+    │  admin.py
+    │  apps.py
+    │  consumers.py
+    │  models.py
+    │  routing.py
+    │  tests.py
+    │  views.py
+    │  __init__.py
+    │
+    ├─migrations
+    │      0001_initial.py
+    │      __init__.py
+    │
+    └─templates
+            alarm.html
+            ShareMe.html
+ ```
